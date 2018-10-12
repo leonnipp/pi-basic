@@ -1,0 +1,14 @@
+
+defaultpackage:
+    - mtr
+    - vim
+    - ntpdate
+    - python-pip
+    - wget
+    - snmpd
+    - dnsutils
+    - git
+
+name_server:
+    - 8.8.8.8
+    - 8.8.4.4
