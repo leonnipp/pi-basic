@@ -38,7 +38,9 @@
 - name: Change Wifi config
   become: yes
   template:
-    src: "{{role_path}}/files/logrotate.conf"
+    src: "{{role_path}}/files/wpa_supplicant.j2"
+    dest: /etc/wpa_supplicant/wpa_supplicant.conf
+  tags: wifi
 
 - name: SSH authorized_key
   become: yes
